@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import List from './List'
+import List from './list.js'
 import './app.css';
 
 class App extends Component {
@@ -10,19 +10,19 @@ class App extends Component {
     }
   };
 
-  render () {
+  render() {
     const { store } = this.props
     return (
       <main className='App'>
         <header className='App-header'>
-          <h1>Trelloyes</h1>
+          <h1>Trelloyes!</h1>
         </header>
         <div className='App-list'>
           {store.lists.map(list => (
-            <List 
+            <List
               key={list.id}
               header={list.header}
-              cards={lists.cardIDs.map(id => store.allCards[id])}
+              cards={list.cardIds.map(id => store.allCards[id])}
             />
           ))}
         </div>

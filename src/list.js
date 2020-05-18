@@ -9,7 +9,7 @@
 //The content prop is a string of the Card's content.
 
 import React from 'react';
-import Card from './Card'
+import Card from './card'
 import './List.css';
 
 export default function List(props) {

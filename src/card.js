@@ -7,7 +7,7 @@
 // These props will be passed in for each Card from the List component.
 
 import React from 'react';
-import './Card.css';
+import './card.css';
 
 export default function Card(props) {
   return (
